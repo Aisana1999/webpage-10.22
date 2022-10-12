@@ -1,23 +1,87 @@
 <html>
   <head>
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="sign-upform/src/styles.css" />
   </head>
+
   <body>
-    <h1>Sign in to your account:</h1>
-    <div>
-      <div class="flowers">
-        <form id="signup-form">
-          <label class="email">Email</label>
-          <input type="email" />
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Sign Up</a></li>
+        <li><a href="">Sign In</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><input placeholder="Search..." class="search" type="search" /></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="left-container"></div>
+      <div id="formContainer">
+        <h3 id="signUpHeader">Please Sign Up</h3>
+        <hr />
+
+        <form>
+          <div class="form-group">
+            <label class="form-label">Enter Your Name</label>
+            <input class="form-control" type="text" name="name" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Enter Your Email</label>
+            <input class="form-control" type="email" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Enter Your Password</label>
+            <input class="form-control" type="password" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Enter Your Phone</label>
+            <input class="form-control" type="tel" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Enter your Date of Birth</label>
+            <input class="form-control" type="date" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Please select your gender</label>
+            <div class="form-radio">
+              <input type="radio" name="gender" /> <label>Male</label>
+            </div>
+            <div class="form-radio">
+              <input type="radio" name="gender" /> <label>FeMale</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Enter your username</label>
+            <input class="form-control" type="text" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Enter your Address</label>
+
+            <textarea class="form-control" cols="30" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Select your Country</label>
+
+            <select class="form-control" name="country" id="country">
+              <option value="0">USA</option>
+              <option value="1">UK</option>
+              <option value="2">China</option>
+              <option value="3">India</option>
+              <option value="4">S Korea</option>
+            </select>
+          </div>
+
+          <button class="btn-signup" type="button">Sign Up</button>
           <br />
-          <label>Password</label>
-          <input type="password" />
           <br />
-          <button>Sign In</button>
-          <button>Forgot your password?</button>
+          <br />
+          <br />
+          <br />
         </form>
       </div>
     </div>
-    <script src="src/index.js"></script>
   </body>
 </html>
