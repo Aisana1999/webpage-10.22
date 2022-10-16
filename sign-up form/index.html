@@ -11,126 +11,101 @@
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Sign Up</a></li>
-        <li><a href="">Sign In</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Contact Us</a></li>
-        <li><input placeholder="Search..." class="search" type="search" /></li>
-      </ul>
-    </nav>
-
     <div class="container">
-      <div class="left-container"></div>
-      <div id="formContainer">
-        <h3 id="signUpHeader">Please Sign Up</h3>
-        <hr />
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Enter Your Name</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Enter Your Email</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Enter Your Password</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Enter Your Phone</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
-          </div>
-        </form>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Sign Up</a></li>
+          <li><a href="">Sign In</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li>
+            <input placeholder="Search..." class="search" type="search" />
+          </li>
+        </ul>
+      </nav>
 
-        <form>
-          <div class="form-group">
-            <label class="form-label">Enter Your Name</label>
-            <input class="form-control" type="text" name="name" />
-          </div>
-
-          <div class="form-group">
-            <label class="form-label">Enter Your Email</label>
-            <input class="form-control" type="email" />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Enter Your Password</label>
-            <input class="form-control" type="password" />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Enter Your Phone</label>
-            <input class="form-control" type="tel" />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Enter your Date of Birth</label>
-            <input class="form-control" type="date" />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Please select your gender</label>
-            <div class="form-radio">
-              <input type="radio" name="gender" /> <label>Male</label>
+      <div class="container">
+        <div class="left-container"></div>
+        <div id="formContainer">
+          <h3 id="signUpHeader">Please Sign Up</h3>
+          <hr />
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Enter Your Name</label
+              >
+              <input type="password" class="form-control" />
             </div>
-            <div class="form-radio">
-              <input type="radio" name="gender" /> <label>FeMale</label>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Enter Your Email</label
+              >
+              <input type="email" class="form-control" />
             </div>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Enter your username</label>
-            <input class="form-control" type="text" />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Enter your Address</label>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Enter Your Password</label
+              >
+              <input type="password" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Enter Your Phone</label
+              >
+              <input type="phone" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Enter Your Date of Birth</label>
+              <input type="date" class="form-control" />
+            </div>
+             <div class="mb-3">
+              <label class="form-label">Please select your gender</label>
+            <div class="form-check">
 
-            <textarea class="form-control" cols="30" rows="3"></textarea>
-          </div>
+  <label class="form-check-label" 
+  >
+   Male
+  </label>
+    <input class="form-check-input" type="radio" name="gender" >
+</div>
+<div>
+  <input type="radio" name="gender" > <label>Female</label>
+</div>
+</div>
+<div class="mb-3">
+              <label class="form-label"
+                >Enter your username</label
+              >
+<input class="form-control" type="text"  /> 
+</div>
+<div class="mb-3">
+              <label class="form-label"
+                >Enter your Address</label
+              >
+              <textarea class="form-control" cols="30" rows="3"></textarea> 
+</div>
+<div class="mb-3">
+              <label class="form-label"
+                >Select your Country</label
+              >
+               <select class="form-control" name="country" id="country">
+                <option value="0">USA</option>
+                <option value="1">UK</option>
+                <option value="2">China</option>
+                <option value="3">India</option>
+                <option value="4">S Korea</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-outline-primary">Sign Up</button>
+           
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
 
-          <div class="form-group">
-            <label class="form-label">Select your Country</label>
 
-            <select class="form-control" name="country" id="country">
-              <option value="0">USA</option>
-              <option value="1">UK</option>
-              <option value="2">China</option>
-              <option value="3">India</option>
-              <option value="4">S Korea</option>
-            </select>
-          </div>
-
-          <button class="btn-signup" type="button">Sign Up</button>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-        </form>
-      </div>
-    </div>
-  </body>
+</div>
+          </form>          
 </html>
